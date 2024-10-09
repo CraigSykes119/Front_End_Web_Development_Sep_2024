@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    background-color: #cccccc;
+    ;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: grey;
+}
+
+.new {
+    font-style: italic;
+    color: red;
+}
