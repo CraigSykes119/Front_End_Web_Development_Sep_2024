@@ -1,17 +1,17 @@
-// Declare variables
-let numberOfStars = 0;
-let outputStars = '';
+  // Declare variables
+  let numberOfStars = 0;
+  let outputStars = '';
 
-// inputs
-numberOfStars = prompt("Enter the number of stars?");
+  // inputs
+  numberOfStars = prompt("Enter the number of stars?");
 
-// loop
-for (let i=0; i < numberOfStars; i++ ) {
-  outputStars += "*";
-}
-
-// output 
-alert("Outputting " + numberOfStars + " stars: " + outputStars)
+ // loop
+  for (let i=0; i < numberOfStars; i++ ) {
+    outputStars += "*";
+ }
+ 
+ // output 
+ alert("Outputting " + numberOfStars + " stars: " + outputStars)
 
 // check that user entered a number and that it is greater than zero
   // otherwise ask user to enter another number
