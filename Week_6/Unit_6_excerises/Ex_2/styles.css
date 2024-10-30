@@ -1,0 +1,159 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+/* Hero image */
+#heroimage img {
+    width: 100%;
+    height: auto;
+}
+
+/* Hero cards styling */
+#hero_columns {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+}
+
+.hero_card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 400px; /* Set a minimum height for consistency */
+    box-sizing: border-box;
+}
+
+.hero_card img {
+    width: auto;
+    height: auto; 
+    max-height: 400px;
+    margin-bottom: 10px;
+}
+
+.image_container {
+    background-color: #003366;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.hero_card h2 {
+    margin: 10px 0;
+    font-size: auto;
+    background-color: #003366;
+    color: white;
+}
+
+.hero_card p {
+    flex-grow: 1;
+    font-size: 1em;
+    line-height: 1.4em;
+    text-align: left;
+}
+
+.hero_card a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+/* Top 5 lists styling */
+#top5lists {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.top5table {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero_card {
+        flex: 1 1 calc(50% - 20px); /* Two columns on tablets */
+        max-width: calc(50% - 20px);
+    }
+
+    #top5lists {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero_card img {
+        width: auto;
+        height: auto; 
+        margin-bottom: 10px;
+    }
+
+    #hero_columns {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero_card {
+        flex: 1 1 100%; /* One column on small screens */
+        max-width: 100%;
+    }
+    
+}
+   
