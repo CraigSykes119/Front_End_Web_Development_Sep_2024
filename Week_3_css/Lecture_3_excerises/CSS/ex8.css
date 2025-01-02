@@ -1,20 +1,25 @@
+/* Document styles */
 body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Hyperlink styles */
 a {
-    background-color: #cccccc;
-    ;
+    background-color: #CCCCCC;
+    text-decoration: none;
+    color: inherit;
 }
 
+/* Heading styles */
 h1 {
-    font-family: 'Times New Roman', Times, serif;
-    color: grey;
+    font-family: "Times New Roman", Times, serif;
+    color: #CCCCCC;
 }
 
-.new {
-    font-style: italic;
+/* News class styles */
+.news {
     color: red;
+    font-style: italic;
 }
