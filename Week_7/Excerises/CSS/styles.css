@@ -1,0 +1,29 @@
+.animate-character {
+    text-transform: uppercase;
+    background-image: url(https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    /*(
+      -225deg,
+      #e3e1ed 0%,
+      #7a1010 29%,
+      #a5ff13 67%,
+      #fff800 100%
+    );*/
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #e33535;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1s linear infinite;
+    display: inline-block;
+    font-size: 190px;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
