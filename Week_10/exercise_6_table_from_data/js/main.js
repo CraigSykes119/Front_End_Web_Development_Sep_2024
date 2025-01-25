@@ -4,35 +4,40 @@
     // globals
     const contentContainer = document.getElementById("content");
     
-    function renderTable(publicHolidays){
-        let hols = publicHolidays;
-        let outputHtml = '<div class="table-container">';
-
-        outputHtml +='<h2>List of Public Holidays in Ireland for 2024</h2>';
-        outputHtml += '<table class="blueTable">';
-        outputHtml += '  <thead>';
-        outputHtml += '    <tr>';
-        outputHtml += '      <th>Date</th>';
-        outputHtml += '      <th>Name (in Irish)</th>';
-        outputHtml += '      <th>Name</th>';
-        outputHtml += '    </tr>';
-        outputHtml += '  </thead>';
-        outputHtml += '  <tbody>';
-
-        for (let i in hols) {
-            outputHtml += '<tr>';
-            outputHtml += '  <td>' + hols[i].date + '</td>';
-            outputHtml += '  <td>' + hols[i].localName + '</td>';
-            outputHtml += '  <td>' + hols[i].name + '</td>';
-            outputHtml += '</tr>';
-        }
-        outputHtml += '  </tbody>';
-        outputHtml += '</table>';
-        outputHtml += '</div>';
-
+    function renderTable(publicHolidays) {
+        const outputHtml = `
+            <div class="table-container">
+                <h2>List of Public Holidays in Ireland for 2024</h2>
+                <table class="blueTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Name (in Irish)</th>
+                            <th>Name</th>
+                            <th>Country Code</th>
+                            <th>Types</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${publicHolidays.map(holiday => `
+                            <tr>
+                                <td>${holiday.date}</td>
+                                <td>${holiday.localName}</td>
+                                <td>${holiday.name}</td>
+                                <td>${holiday.countryCode}</td>
+                                <td>${holiday.types.join(", ")}</td>
+                            </tr>
+                        `).join("")}
+                    </tbody>
+                </table>
+            </div>
+        `;
+    
+        // Inject the generated HTML into the content container
         contentContainer.innerHTML = outputHtml;
     }
-
+    
+    
     function init() {
         try {
             // load data as a JS object
