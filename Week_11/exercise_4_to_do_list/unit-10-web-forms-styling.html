@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Simple To-Do List</h1>
+  </header>
+  <main class="container">
+    <!-- Table for displaying to-do items -->
+    <section>
+      <table id="todo-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Priority</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- To-Do items will appear here -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Form for adding to-do items -->
+    <section>
+      <form id="todo-form">
+        <div class="row">
+          <div class="col-25">
+            <label for="title">Title</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="title" name="title" placeholder="Enter title" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="description">Description</label>
+          </div>
+          <div class="col-75">
+            <textarea id="description" name="description" placeholder="Enter description" required></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="priority">Priority</label>
+          </div>
+          <div class="col-75">
+            <select id="priority" name="priority" required>
+              <option value="High">High</option>
+              <option value="Medium">Medium</option>
+              <option value="Low">Low</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
