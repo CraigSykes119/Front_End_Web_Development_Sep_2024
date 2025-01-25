@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwiperJS Slideshow</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Exercise 2 – SwiperJS Slideshow</h1>
+  
+  <!-- Swiper -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg" alt="Hot air balloons">
+        <div class="overlay">Hot Air Balloons</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg" alt="Green thumbs image">
+        <div class="overlay">Green Thumbs</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg" alt="Bird flying">
+        <div class="overlay">Bird Flying</div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- Navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+   <!-- If we need scrollbar -->
+   <div class="swiper-scrollbar"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
