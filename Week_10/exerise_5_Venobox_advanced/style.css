@@ -1,0 +1,10 @@
+.image-box-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%; /* Ensure the link covers most of the image */
+    display: block;
+    z-index: 1;
+  }
+  
